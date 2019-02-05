@@ -12,7 +12,7 @@ class Info:
         Returns the summary of the latest article that mentions that particular stock from IEX API endpoint
         """
         try:
-            # Fetch latest summary of latest article
+            # Fetch summary of latest article
             response = requests.get(stock_url + symbol + '/news/last/1')
             json = response.json()
             return json [0]['summary']
@@ -26,6 +26,16 @@ class Info:
         """
         Returns the link to the latest article that mentions that particular stock from IEX API endpoint
         """
+        try:
+            # Fetch latest article
+            response = requests.get(stock_url + symbol + '/news/last/1')
+            json = response.json()
+            return json [0]['url']
+
+        except Exception as e:
+
+            print(str(e))
+            
 
     def get_venture_name(self, symbol, stock_url):
         """
