@@ -35,15 +35,32 @@ class Info:
         except Exception as e:
 
             print(str(e))
-            
+
 
     def get_venture_name(self, symbol, stock_url):
         """
         Returns the venture name based on that stock symbol from IEX API endpoint
         """
+        try:
+            # Fetch venture name
+            response = requests.get(stock_url + symbol + '/company')
+            json = response.json()
+            return json['ventureName']
+
+        except Exception as e:
+
+            print(str(e))
 
     def get_exchange(self, symbol, stock_url):
         """
         Returns the stock exchange that stock belongs to from IEX API endpoint
         """
-    
+        try:
+            # Fetch the stock exchange belongs to
+            response = requests.get(stock_url + symbol + '/company')
+            json = response.json()
+            return json['exchange']
+
+        except Exception as e:
+
+            print(str(e))
