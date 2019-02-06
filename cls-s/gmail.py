@@ -16,11 +16,11 @@ class Gmail:
             gmail_password = '' # set gmail app pass
 
 
-        # Email Config set-up!
-        msg = MIMEMultipart('alternative')
-        msg.attach(body)
-        msg['From'] = '' # set from address
-        msg['To'] = '' # set to address
-        
-        now = datetime.datetime.now()
-        msg['Subject'] = str(now.day) + '-' + str(now.month) + '-' + str(now.year) + 'Stock Insights'
+            # Email Config set-up!
+            msg = MIMEMultipart('alternative')
+            msg.attach(body)
+            msg['From'] = '' # set from address
+            msg['To'] = '' # set to address
+            
+            now = datetime.datetime.now()
+            msg['Subject'] = str(now.day) + '-' + str(now.month) + '-' + str(now.year) + 'Stock Insights'
