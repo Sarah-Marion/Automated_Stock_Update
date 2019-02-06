@@ -24,3 +24,15 @@ class Gmail:
             
             now = datetime.datetime.now()
             msg['Subject'] = str(now.day) + '-' + str(now.month) + '-' + str(now.year) + 'Stock Insights'
+
+            # Email sending
+            server = smtplib.SMTP('smtp.gmail.com', 587)
+            server.starttls()
+            server.login(gmail_user, gmail_password)
+            server.sendmail(msg['From'], msg['To'], msg.as_string())
+            server.close()
+
+        except Exception as e:
+
+            print(str(e))
+            
