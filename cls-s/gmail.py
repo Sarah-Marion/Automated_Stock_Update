@@ -12,15 +12,15 @@ class Gmail:
     def send_email(self,body):
         try:
             # Authentication for Gmail acc.
-            gmail_user = '' # set gmail address
-            gmail_password = '' # set gmail app pass
+            gmail_user = 'roxyfoxerme@gmail.com' 
+            gmail_password = 'synagen123' 
 
 
             # Email Config set-up!
             msg = MIMEMultipart('alternative')
             msg.attach(body)
-            msg['From'] = '' # set from address
-            msg['To'] = '' # set to address
+            msg['From'] = 'roxyfoxerme@gmail.com' 
+            msg['To'] = 'mumeronick@gmail.com' # set to address
             
             now = datetime.datetime.now()
             msg['Subject'] = str(now.day) + '-' + str(now.month) + '-' + str(now.year) + 'Stock Insights'
