@@ -20,7 +20,7 @@ exchange = []
 try:
     # Fetching latest articles
     for i in symbols:
-        summary.append(info.get_summarry(i, stockURL))
+        summary.append(info.get_summary(i, stockURL))
         articles.append(info.get_articles(i, stockURL))
         ventureName.append((info.get_venture_name(i, stockURL)))
         exchange.append(info.get_exchange(i, stockURL))
