@@ -2,9 +2,16 @@ import sys
 import os
 
 sys.path.append(os.path.join(os.path.dirname(__file__), './cls-s'))
+
 from gmail import Gmail
 from venture_info import Info
 from temp_builder import Builder
+
+
+# import Gmail from cls-s/gmail.py
+# import Info from cls-s/venture_info
+# import Builder from cls-s/temp_builder
+
 
 mail = Gmail()
 info = Info()
