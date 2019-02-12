@@ -25,6 +25,7 @@ As a user I would like:
 
 > * Python3.6
 > * Python libraries
+> * Google Client Library
 
 ## Setup/Installation Requirements
 
@@ -32,7 +33,7 @@ As a user I would like:
 
 > * Internet access
 > * Gmail account
-> * Text Editor (vscode)
+> * Text Editor (vscode) N?B any would do
 > * Amazon AWS account
 > * IEX API
 > * ```git clone https://github.com/sarah-marion/Automated_Stock_Update.git```
@@ -50,16 +51,25 @@ As a user I would like:
 ## Dependancy Installments
 
 > * ```pip3 install python3.6```
+> * ```pip3 install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib```
 
 ### Installing Python Libraries needed
 
 > * ```pip3 install datetime requests jinja2```
 
+## Running the application
+
+> Configure gmail.py email settings to your preference
+
+> Configure symbols in app.py for the stocks you want to receive.
+
+> run ```python3 app.py`` to get the application running and send the email to your desired destination
+
 ## Known Bugs
 
 > It does not have bugs.But if any problems should occur, email me at devsarahmarion@gmail.com
-<!-- 
-> * N/B Also it is not finished yet...more features and functionalities are still being worked on. -->
+
+> * N/B Also it is not finished yet...more features and functionalities are still being worked on for it to be utilized in a Windows task scheduler.
 
 ## Support and Contact Details
 
