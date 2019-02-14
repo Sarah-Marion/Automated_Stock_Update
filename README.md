@@ -65,6 +65,8 @@ As a user I would like:
 
 > run ```python3 app.py`` to get the application running and send the email to your desired destination
 
+> ```python3 quickstart.py``` to check your email configurations via the terminal
+
 ## Known Bugs
 
 > It does not have bugs.But if any problems should occur, email me at devsarahmarion@gmail.com
