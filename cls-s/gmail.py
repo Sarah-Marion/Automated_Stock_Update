@@ -13,7 +13,7 @@ class Gmail:
         try:
             # Authentication for Gmail acc.
             gmail_user = 'roxyfoxerme@gmail.com' 
-            gmail_password = 'synagen123' 
+            gmail_password = 'blahblah*3' 
 
 
             # Email Config set-up!
